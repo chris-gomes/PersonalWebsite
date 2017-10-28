@@ -1,0 +1,7 @@
+# User-specific stuff:
+.idea/
+
+# Firebase Files:
+*.firebaserc
+firebase.json
+PersonalWebsite.iml
