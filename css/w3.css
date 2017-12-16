@@ -94,7 +94,7 @@ svg:not(:root) {
 }
 
 code, kbd, pre, samp {
-    font-family: monospace, monospace;
+    font-family: Arial;
     font-size: 1em
 }
 
@@ -186,7 +186,7 @@ img {
 
 /* End extract */
 html, body {
-    font-family: Verdana, sans-serif;
+    font-family: Arial;
     font-size: 15px;
     line-height: 1.5
 }
@@ -220,7 +220,7 @@ h6 {
 }
 
 .w3-serif {
-    font-family: serif
+    font-family: Arial
 }
 
 h1, h2, h3, h4, h5, h6 {
