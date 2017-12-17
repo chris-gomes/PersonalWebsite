@@ -35,7 +35,7 @@
     function calculateAge(birthday) {
         var currentDate = new Date();
         var birthDate = new Date(birthday);
-        return ((currentDate - birthDate) / 1000 / 60 / 60 / 24 / 365.2422).toFixed(10);
+        return round((currentDate - birthDate) / 1000 / 60 / 60 / 24 / 365.2422, 10);
     }
 
     function setCookie(cname, cvalue, exdays) {
@@ -59,6 +59,13 @@
             }
         }
         return "";
+    }
+
+    function round(value, precision) {
+        var stringVersion = value.toString();
+        var splitUp = stringVersion.split(".")
+        splitUp[1] = splitUp[1].substr(0, precision)
+        return splitUp.join(".");
     }
 
     function resetBirthday() {
