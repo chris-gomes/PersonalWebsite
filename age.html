@@ -13,6 +13,13 @@
             color: white;
             font-family: Arial;
         }
+        .bottomleft {
+            position: absolute;
+            bottom: 1%;
+            text-align: left;
+            color: Black;
+            font-family: Arial;
+        }
         body {
             overflow-x: hidden;
             font-size: 8em;
@@ -21,7 +28,8 @@
     </style>
 </head>
 <body>
-    <span id="age" class="center">0</span>
+    <span id="age" class="center"></span>
+    <button class="bottomleft" onclick="resetBirthday()">Reset</button>
 </body>
 <script>
     function calculateAge(birthday) {
@@ -51,6 +59,12 @@
             }
         }
         return "";
+    }
+
+    function resetBirthday() {
+        var birthday = prompt("Birthday (Month DD, YYYY HH:MM:SS):")
+        setCookie("AgeCalculatorBirthday", birthday, 365)
+        location.reload(true);
     }
 
     if (getCookie("AgeCalculatorBirthday") == "") {
