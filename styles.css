@@ -1,9 +1,7 @@
 html {
-    background: url("img/laptop.jpeg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url("img/laptop.jpeg") no-repeat center;
+    height: 100%;
+    width: 100%;
 }
 
 img {
@@ -23,13 +21,13 @@ img {
 
 .column-left {
     float: left;
-    width: 55%;
+    width: 45%;
     padding: 1%;
 }
 
 .column-right {
     float: left;
-    width: 35%;
+    width: 45%;
     padding-top: 1%;
 }
 
