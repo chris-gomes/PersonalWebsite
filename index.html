@@ -2,99 +2,37 @@
 <html lang="en">
 <title>Christopher Gomes</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    body, h1, h2, h3, h4, h5, h6 {
-        font-family: Arial;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
 
-    .w3-row-padding img {
-        margin-bottom: 12px
-    }
+<div class="row font">
+    <!-- Left Column -->
+    <div class="column-left" id="left">
+        <!-- Name -->
+        <div class="card white margin-bottom" id="name">
+            <h1>Christopher Gomes</h1>
+        </div>
+        <!-- About Me -->
+        <div class="card white margin-bottom" id ="about me">
+            <b style="font-size: larger">About Me</b>
+            <br><br>
+            I am a student at Northeastern University pursuing a degree
+            in Computer Science and Business Administration with a concentration in Finance. My
+            planned path of study is in machine learning with an interest in its effects on privacy.
+            I enjoy discovering local coffee shops and reading about consumer electronics.
+        </div>
+        <!-- Links -->
+        <div class="card white margin-bottom" id ="links">
 
-    /* Set the width of the sidebar to 120px */
-    .w3-sidebar {
-        width: 120px;
-    }
-
-    /* Add a left margin to the "home" that matches the width of the sidebar (120px) */
-    #home {
-        margin-left: 120px
-    }
-
-    /* Remove left margin from "home" on small screens and add top margin */
-    @media only screen and (max-width: 600px) {
-        #home {
-            margin-left: 0
-        }
-    }
-
-    .center {
-        position: absolute;
-        top: 40%;
-        text-align: center;
-    }
-</style>
-<body background="img/laptop.jpeg">
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-margin w3-card-2">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-    </a>
-    <a href="html/about.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-    </a>
-    <a href="html/experience.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-        <i class="fa fa-eye w3-xxlarge"></i>
-        <p>EXPERIENCE</p>
-    </a>
-    <a href="html/projects.html" class="w3-bar-item w3-button w3-padding-large w3-white">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>PROJECTS</p>
-    </a>
-</nav>
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium w3-card-2" id="myNavbar">
-    <div class="w3-bar w3-light-grey w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="html/about.html" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-        <a href="html/experience.html" class="w3-bar-item w3-button" style="width:25% !important">EXPERIENCE</a>
-        <a href="html/projects.html" class="w3-bar-item w3-button"
-           style="width:25% !important">PROJECTS</a>
+        </div>
     </div>
-</div>
-
-<!-- Home -->
-<div class="w3-padding-large" id="home">
-    <!-- Title Desktop -->
-    <div class="w3-container w3-white w3-margin w3-card-2 w3-content center
-            w3-center w3-display-middle w3-padding-large w3-hide-small"
-         id="titleDesktop">
-        <h1 class="w3-jumbo">Christopher Gomes</h1>
+    <!-- Right Column -->
+    <div class="column-right">
+        <!-- Photo -->
+        <div class="card white" id="right">
+            <img src="img/me.jpg">
+        </div>
     </div>
-    <!-- Title Mobile -->
-    <div class="w3-container w3-white w3-card-2 w3-content \
-            w3-display-middle w3-hide-medium w3-hide-large"
-         id="titleMobile">
-        <h1>Christopher Gomes</h1>
-    </div>
-    <!-- Footer -->
-    <!--<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge w3-display-bottommiddle">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by w3.css</p>
-    </footer>-->
-    <!-- END PAGE CONTENT -->
 </div>
 </body>
 </html>
