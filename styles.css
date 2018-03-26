@@ -21,13 +21,13 @@ img {
 
 .column-left {
     float: left;
-    width: 45%;
+    width: 48%;
     padding: 1%;
 }
 
 .column-right {
     float: left;
-    width: 45%;
+    width: 48%;
     padding-top: 1%;
 }
 
@@ -77,6 +77,14 @@ img {
 .fa-envelope {
     color: white;
     background: purple;
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 
 @media (max-width: 1000px) {
