@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Age</title>
+        <style>
+            .center {
+                position: absolute;
+                top: 40%;
+                width: 100%;
+                text-align: center;
+                height: 50%;
+                color: white;
+                font-family: Arial;
+            }
+            .bottomleft {
+                position: absolute;
+                bottom: 1%;
+                text-align: left;
+                color: Black;
+                font-family: Arial;
+            }
+            body {
+                overflow-x: hidden;
+                font-size: 8em;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <script src="calculator.js" type="text/javascript">
+        resetBirthday();
+        calculateAge();
+        getCookie();
+        setCookie();
+    </script>
+    <body>
+        <span id="age" class="center"></span>
+        <button class="bottomleft" onclick="resetBirthday()">Reset</button>
+    </body>
+</html>
