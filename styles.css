@@ -36,12 +36,20 @@ img {
     font-size: large;
 }
 
+.margin-left {
+    margin-left: 1%;
+}
+
+.margin-right {
+    margin-right: 1%;
+}
+
 .margin-bottom {
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .margin-top {
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .row:after {
@@ -90,7 +98,7 @@ img {
 @media (max-width: 1000px) {
     .column-left {
         width: 95%;
-        padding-bottom: 0%;
+        padding-bottom: 1%;
     }
 
     .column-right {
