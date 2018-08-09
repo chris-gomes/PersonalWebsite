@@ -1,7 +1,7 @@
 function calculateAge(birthday) {
     var currentDate = new Date();
     var birthDate = new Date(birthday);
-    return ((currentDate - birthDate) / 1000 / 60 / 60 / 24 / 365.2422).toFixed(10);
+    return ((currentDate - birthDate) / 1000 / 60 / 60 / 24 / 365.2422).toFixed(8);
 }
 
 function setCookie(cname, cvalue, exdays) {
