@@ -5,6 +5,7 @@
 *.firebaserc
 firebase.json
 PersonalWebsite.iml
+.firebase/
 
 # Deploy Files
 toDeploy/
