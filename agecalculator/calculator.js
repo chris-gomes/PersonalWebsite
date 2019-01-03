@@ -39,4 +39,4 @@ if (getCookie("AgeCalculatorBirthday") == "") {
 }
 savedBirthday = getCookie("AgeCalculatorBirthday");
 window.setInterval(function() {
-    document.getElementById("age").innerHTML = "Age | ".concat(calculateAge(savedBirthday));}, 100);
+    document.getElementById("age").innerHTML = calculateAge(savedBirthday)}, 100);
