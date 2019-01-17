@@ -6,6 +6,7 @@
 firebase.json
 PersonalWebsite.iml
 .firebase/
+npm-debug.log
 
 # Deploy Files
 toDeploy/
