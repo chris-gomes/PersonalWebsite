@@ -16,7 +16,7 @@
   }
 
   .rounded-corners {
-    border-radius: 25px
+    border-radius: 25px;
   }
 </style>
 
@@ -27,17 +27,21 @@
     <div class="w3-bar w3-black w3-card">
       <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
         onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-      <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
-      <a href="#books" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAVORITE BOOKS</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
+      <a href="sections/organizations.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORGANIZATIONS</a>
+      <a href="sections/projects.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+      <a href="sections/books.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAVORITE BOOKS</a>
     </div>
   </div>
 
   <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
-    <a href="#books" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAVORITE BOOKS</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+    <a href="sections/organizations.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORGANIZATIONS</a>
+    <a href="sections/projects.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
+    <a href="sections/books.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAVORITE
+      BOOKS</a>
   </div>
 
   <!-- Page content -->
@@ -45,7 +49,7 @@
 
     <!-- Home -->
     <div class="w3-display-container w3-center">
-      <img src="img/me.jpg" style="width:65%">
+      <img src="img/me.jpg" style="width:60%">
       <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px">
         <h2 class="w3-wide">CHRISTOPHER GOMES</h2>
         <p class="w3-justify">
@@ -56,86 +60,13 @@
       </div>
     </div>
 
-    <!-- Projects Section -->
-    <div class="w3-black" id="projects">
-      <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">PROJECTS</h2>
-
-        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-          <div class="w3-container w3-white w3-padding-32 rounded-corners">
-            <p><b>Dangerous Links</b></p>
-            <p>
-              The goal of this project was to develop and test machine learning models that could be used to
-              determine if a site is malicious based off its URL and WHOIS information. Multiple machine learning
-              models were trained and tested for accuracy and other metrics to determine the best model for different
-              situations.
-            </p>
-            <a class="w3-opacity" href="https://github.com/chris-gomes/DangerousLinks">Source Code</a>
-          </div>
-          <br>
-          <div class="w3-container w3-white w3-padding-32 rounded-corners">
-            <p><b>Media Stock Sentiment</b></p>
-            <p>
-              The goal of this project was to determine if the performance of the stock market can be predicted
-              from the public's response to events in the world. After collecting millions of articles and
-              the public's response to these articles, multiple machine learning algorithms were trained and
-              tested to try and determine future performance.
-            </p>
-            <a class="w3-opacity" href="https://github.com/chris-gomes/MediaStockSentiment">Source Code</a>
-          </div>
-          <br>
-          <div class="w3-container w3-white w3-padding-32 rounded-corners">
-            <p><b>QwikTix.ai</b></p>
-            <p>
-              The goal of this project was to design and create a database system for a movie information and ticketing
-              service. The ddl SQL was created based on a relational database schema and ERD. In addition, a Python
-              command line interface was written to perform basic operations and interactions with the database.
-            </p>
-            <a class="w3-opacity" href="https://github.com/chris-gomes/QwikTix.ai">Source Code</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- The Favorite Books Section -->
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="books">
-      <h2 class="w3-wide w3-center">FAVORITE BOOKS</h2>
-      <p class="w3-opacity w3-center"><i>
-          These are some of my favorite books ranging from technology, data, and ethics to coffee.
-        </i></p>
-      <p class="w3-justify w3-container">
-        <ul>
-          <li><a
-              href="https://www.amazon.com/Factfulness-Reasons-World-Things-Better-ebook/dp/B0756J1LLV/ref=sr_1_4?s=digital-text&ie=UTF8&qid=1543728724&sr=1-4&keywords=factfulness">
-              Factfulness: Ten Reasons We're Wrong About the World-and Why Things Are Better Than You Think by Hans
-              Rosling
-            </a></li>
-          <li><a
-              href="https://www.amazon.com/Curse-Bigness-Antitrust-New-Gilded/dp/0999745468/ref=sr_1_1?ie=UTF8&qid=1543728815&sr=8-1&keywords=the+curse+of+bigness">
-              The Curse of Bigness: Antitrust in the New Gilded Age by Tim Wu
-            </a></li>
-          <li><a href="https://www.amazon.com/How-Make-Coffee-Science-Behind/dp/1419715844">
-              How to Make Coffee: The Science Behind the Bean by Lani Kingston
-            </a></li>
-          <li><a href="https://www.amazon.com/gp/product/1250192455/ref=ppx_yo_dt_b_asin_title_o09_s00?ie=UTF8&psc=1">
-              A Higher Loyalty: Truth, Lies, and Leadership by James Comey
-            </a></li>
-          <li><a href="https://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582328">
-              How Google Works by Eric Schmidt and Jonathan Rosenberg
-            </a></li>
-        </ul>
-      </p>
-    </div>
     <!-- End Page Content -->
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <footer class="w3-container w3-padding-16 w3-center w3-opacity w3-light-grey w3-xlarge">
     <a class="fa fa-linkedin" href="https://www.linkedin.com/in/gomes-chris"></a>
     <a class="fa fa-github" href="https://github.com/chris-gomes"></a>
-    <a class="fa white" href="http://www.hubae.org/2018/03/01/hubbub-march-christopher-gomes/">
-      <img src="img/hub.jpg" width="25" height="23">
-    </a>
   </footer>
   <script>
     // Used to toggle the menu on small screens when clicking on the menu button
