@@ -13,3 +13,4 @@ toDeploy/
 
 # img folder
 img/
+node_modules
