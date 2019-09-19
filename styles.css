@@ -7,6 +7,11 @@ body {
     display: none
 }
 
+.blue-on-white-text {
+    background-color:rgb(33,105,177);
+    color: white
+}
+
 .rounded-corners {
     border-radius: 25px;
 }
