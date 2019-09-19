@@ -7,10 +7,6 @@ body {
     display: none
 }
 
-.blue-accent {
-    color:rgb(33,105,177)
-}
-
 .rounded-corners {
     border-radius: 25px;
 }
