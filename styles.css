@@ -1,0 +1,21 @@
+body {
+    font-family: "Lato", sans-serif;
+    background:#f1f1f1
+}
+
+.mySlides {
+    display: none
+}
+
+.blue-accent {
+    color:rgb(33,105,177)
+}
+
+.rounded-corners {
+    border-radius: 25px;
+}
+
+.center-contents {
+    margin-left:10%; 
+    margin-right:10%;
+}
