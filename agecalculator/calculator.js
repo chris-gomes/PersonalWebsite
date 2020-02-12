@@ -28,7 +28,7 @@ function getCookie(cname) {
 }
 
 function resetBirthday() {
-    var birthday = prompt("Birthday (Month DD YYYY HH:MM:SS):")
+    var birthday = prompt("Birthday (Month DD YYYY):")
     setCookie("AgeCalculatorBirthday", birthday, 365)
     location.reload(true);
 }
