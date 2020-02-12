@@ -34,7 +34,7 @@ function resetBirthday() {
 }
 
 if (getCookie("AgeCalculatorBirthday") == "") {
-    var birthday = prompt("Birthday (Month DD YYYY HH:MM:SS):")
+    var birthday = prompt("Birthday (Month DD YYYY):")
     setCookie("AgeCalculatorBirthday", birthday, 365)
 }
 savedBirthday = getCookie("AgeCalculatorBirthday");
