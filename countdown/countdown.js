@@ -1,21 +1,30 @@
-function calculateAge(birthday) {
+function calcTimeValues(date) {
     var currentDate = new Date();
-    var birthDate = new Date(birthday);
-    return ((currentDate - birthDate) / 1000 / 60 / 60 / 24 / 365.2422).toFixed(8);
+    var eventDate = new Date(date);
+    if (currentDate >= eventDate) {
+        return [0, 0, 0, 0];
+    }
+    var secondsLeft = Math.floor((eventDate - birthDate) / 1000);
+    var days = Math.floor(secondsLeft / 60 / 60 / 24);
+    secondsLeft = secondsLeft - (days * 24 * 60 * 60);
+    var hours = Math.floor(secondsLeft / 60 / 60);
+    secondsLeft = secondsLeft - (hours * 60 * 60);
+    var minutes = Math.floor(secondsLeft / 60);
+    secondsLeft = secondsLeft - (minutes * 60);
+    return [days, hours, minutes, secondsLeft];
 }
 
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+// function setCookie(cname, cvalue) {
+//     var d = new Date();
+//     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+//     var expires = "expires=" + d.toUTCString();
+//     document.cookie = cname + "=" + cvalue;
+// }
 
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie);
-    var ca = decodedCookie.split(';');
-    for(var i = 0; i <ca.length; i++) {
+    for (var i = 0; i < ca.length; i++) {
         var c = ca[i];
         while (c.charAt(0) == ' ') {
             c = c.substring(1);
@@ -27,16 +36,36 @@ function getCookie(cname) {
     return "";
 }
 
-function resetBirthday() {
-    var birthday = prompt("Birthday (Month DD YYYY):")
-    setCookie("AgeCalculatorBirthday", birthday, 365)
+function resetNameAndDate() {
+    var name = prompt("Event Name:");
+    var date = prompt("Event Date (Month DD YYYY):");
+    document.cookie = "CountdownEventName" + "=" + name;
+    document.cookie = "CountdownEventDate" + "=" + date;
     location.reload(true);
 }
 
-if (getCookie("AgeCalculatorBirthday") == "") {
-    var birthday = prompt("Birthday (Month DD YYYY):")
-    setCookie("AgeCalculatorBirthday", birthday, 365)
+function updateHTML(name, timeValues) {
+    document.getElementById("name").innerHTML = name;
+    document.getElementById("days").innerHTML = timeValues[0];
+    document.getElementById("hours").innerHTML = timeValues[1];
+    document.getElementById("minutes").innerHTML = timeValues[2];
+    document.getElementById("seconds").innerHTML = timeValues[3];
 }
-savedBirthday = getCookie("AgeCalculatorBirthday");
-window.setInterval(function() {
-    document.getElementById("age").innerHTML = calculateAge(savedBirthday)}, 100);
+
+// if (getCookie("CountdownEventName") == "" || getCookie("CountdownEventDate") == "") {
+//     var name = prompt("Event Name:");
+//     var date = prompt("Event Date (Month DD YYYY):");
+//     document.cookie = "CountdownEventName" + "=" + name;
+//     document.cookie = "CountdownEventDate" + "=" + date;
+// }
+var savedName = prompt("Event Name:");
+var savedDate = prompt("Event Date (Month DD YYYY):");
+// savedName = getCookie("CountdownEventName");
+// savedDate = getCookie("CountdownEventDate");
+timeValues = calcTimeValues(savedDate)
+document.getElementById("eventName").innerHTML = savedName;
+// document.getElementById("days").innerHTML = timeValues[0];
+// document.getElementById("hours").innerHTML = timeValues[1];
+// document.getElementById("minutes").innerHTML = timeValues[2];
+// document.getElementById("seconds").innerHTML = timeValues[3];
+// window.setInterval(updateHTML, 100, savedName, timeValues);
