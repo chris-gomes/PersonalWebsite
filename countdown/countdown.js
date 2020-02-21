@@ -52,20 +52,13 @@ function updateHTML(name, timeValues) {
     document.getElementById("seconds").innerHTML = timeValues[3];
 }
 
-// if (getCookie("CountdownEventName") == "" || getCookie("CountdownEventDate") == "") {
-//     var name = prompt("Event Name:");
-//     var date = prompt("Event Date (Month DD YYYY):");
-//     document.cookie = "CountdownEventName" + "=" + name;
-//     document.cookie = "CountdownEventDate" + "=" + date;
-// }
-var savedName = prompt("Event Name:");
-var savedDate = prompt("Event Date (Month DD YYYY):");
-// savedName = getCookie("CountdownEventName");
-// savedDate = getCookie("CountdownEventDate");
+if (getCookie("CountdownEventName") == "" || getCookie("CountdownEventDate") == "") {
+    var name = prompt("Event Name:");
+    var date = prompt("Event Date (Month DD YYYY):");
+    document.cookie = "CountdownEventName" + "=" + name;
+    document.cookie = "CountdownEventDate" + "=" + date;
+}
+savedName = getCookie("CountdownEventName");
+savedDate = getCookie("CountdownEventDate");
 timeValues = calcTimeValues(savedDate)
-document.getElementById("eventName").innerHTML = savedName;
-// document.getElementById("days").innerHTML = timeValues[0];
-// document.getElementById("hours").innerHTML = timeValues[1];
-// document.getElementById("minutes").innerHTML = timeValues[2];
-// document.getElementById("seconds").innerHTML = timeValues[3];
-// window.setInterval(updateHTML, 100, savedName, timeValues);
+window.setInterval(updateHTML, 100, savedName, timeValues);
