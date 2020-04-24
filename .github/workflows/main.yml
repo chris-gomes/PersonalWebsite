@@ -13,6 +13,6 @@ jobs:
     - name: Install Firebase
       run: sudo npm install -g firebase-tools
     - name: Deploy to Firebase
-      run: firebase deploy --project my-website-2ff22
+      run: firebase deploy --project my-website-2ff22 --token $FIREBASE_TOKEN
       env:
         FIREBASE_TOKEN: secrets.FIREBASE_TOKEN
