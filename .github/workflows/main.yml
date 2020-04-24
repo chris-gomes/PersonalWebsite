@@ -1,11 +1,11 @@
-name: Build and Deploy
+name: Firebase Deploy
 on:
   push:
     branches:
     - master
 jobs:
   main:
-    name: Build and Deploy
+    name: Firebase Deploy
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
