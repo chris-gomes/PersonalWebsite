@@ -1,19 +1,7 @@
-# User-specific stuff:
-.idea/
-
 # Firebase Files:
 *.firebaserc
-firebase.json
-PersonalWebsite.iml
 .firebase/
 npm-debug.log
 
-# Deploy Files
-toDeploy/
-
 # node
 node_modules
-package-lock.json
-
-# etc
-datafile.txt
