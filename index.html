@@ -1,80 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../styles.css">
 
-<body>
+<head>
 
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)"
-        onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">HOME</a>
-      <a href="sections/organizations.html"
-        class="w3-bar-item w3-button w3-padding-large w3-hide-small">ORGANIZATIONS</a>
-      <a href="sections/projects.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
-      <a href="sections/books.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">FAVORITE BOOKS</a>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Chris Gomes</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Chris Gomes</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#apps">Website Apps</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#books">Favorite Books</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-    <a href="sections/organizations.html" class="w3-bar-item w3-button w3-padding-large"
-      onclick="myFunction()">ORGANIZATIONS</a>
-    <a href="sections/projects.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PROJECTS</a>
-    <a href="sections/books.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">FAVORITE
-      BOOKS</a>
-  </div>
+  <div class="container-fluid p-0">
 
-  <!-- Page content -->
-  <div class="w3-content" style="max-width:2000px;margin-top:46px">
-
-    <!-- Home -->
-    <div class="w3-display-container w3-center w3-light-grey">
-      <img src="imgs/me.jpg" style="width:60%">
-      <div class="w3-container w3-content w3-center w3-padding-32" style="max-width:800px">
-        <h2 class="w3-wide" style="color:rgb(33,105,177); font-weight: bold">CHRISTOPHER GOMES</h2>
-        <p class="w3-justify">
-          I am a student at Northeastern University pursuing a degree in Computer Science and Business Administration
-          with a focus in machine learning and data mining. I strive to increase understanding and accessibility of
-          data science outside of the technology community. I also enjoy discovering local coffee shops and new music.
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Chris
+          <span class="text-primary">Gomes</span>
+        </h1>
+        <p></p>
+        <p class="lead mb-5">I am a student at Northeastern University pursuing a degree in Computer Science and
+          Business Administration with a focus in machine learning and data mining. I love teaching anything data
+          related and increasing interest in data work outside of the tech community. I also love drinking coffee
+          (especially espressos).
         </p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/gomes-chris">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/chris-gomes">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <!-- End Page Content -->
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="apps">
+      <div class="w-100">
+        <h2 class="mb-5">Website Apps</h2>
+        <div class="subheading mb-3">Web apps running on this domain</div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://ccgomes.com/countdown/">Countdown</a></h3>
+            <div>Counts down the time until a given event.</div>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0"><a href="https://ccgomes.com/agecalculator/">Age Calculator</a></h3>
+            <div>Running calcation of age based off of birthday provided.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="books">
+      <div class="w-100">
+        <h2 class="mb-5">Favorite Books</h2>
+        <ul class="fa-ul mb-0" style="list-style-type:circle;">
+          <li>
+            <a class="text-primary"
+              href="https://www.amazon.com/Factfulness-Reasons-World-Things-Better-ebook/dp/B0756J1LLV/ref=sr_1_4?s=digital-text&ie=UTF8&qid=1543728724&sr=1-4&keywords=factfulness">
+              Factfulness: Ten Reasons We're Wrong About the World and Why Things Are Better Than You Think</a>
+            <span>by Hans Rosling</span>
+          </li>
+          <li>
+            <a class="text-primary" href="https://www.warforkindness.com/">
+              The War for Kindness: Building Empathy in a Fractured World</a>
+            <span>by Jamil Zaki</span>
+          </li>
+          <li><a class="text-primary" href="https://www.amazon.com/How-Make-Coffee-Science-Behind/dp/1419715844">
+              How to Make Coffee: The Science Behind the Bean</a>
+            <span>by Lani Kingston</span>
+          </li>
+          <li><a class="text-primary" href="https://www.davidepstein.com/the-range/">
+              Range: Why Generalists Triumph in a Specialized World by David Epstein</a>
+            <span>by David Epstein</span>
+          </li>
+          <li><a class="text-primary" href="https://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582328">
+              How Google Works</a>
+            <span>by Eric Schmidt and Jonathan Rosenberg</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-center w3-light-grey w3-xlarge">
-    <a class="fa fa-linkedin" style="color:rgb(33,105,177)" href="https://www.linkedin.com/in/gomes-chris"></a>
-    <a class="fa fa-github" style="color:rgb(33,105,177)" href="https://github.com/chris-gomes"></a>
-  </footer>
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
 
 </html>
