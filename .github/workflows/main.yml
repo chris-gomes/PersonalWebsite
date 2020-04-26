@@ -6,7 +6,7 @@ on:
 jobs:
   main:
     name: Firebase Deploy
-    runs-on: andreysenov/firebase-tools
+    runs-on: ubuntu-latest
     steps:
     - name: Check out code
       uses: actions/checkout@v2
