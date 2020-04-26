@@ -6,6 +6,7 @@ on:
 jobs:
   main:
     name: Firebase Deploy
+    runs-on: ubuntu-latest
     container: andreysenov/firebase-tools
     steps:
     - name: Check out code
